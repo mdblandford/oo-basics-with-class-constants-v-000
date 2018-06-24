@@ -4,7 +4,7 @@ class Shoe
   BRANDS =[]
   def initialize(brand)
     @brands = brand
-    BRANDS << brand.uniq #unless BRANDS.include?(brand)
+    BRANDS << brand unless BRANDS.include?(brand)
   end
   def cobble
     self.condition = "new"
